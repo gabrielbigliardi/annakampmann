@@ -9,22 +9,34 @@ export default function Header() {
   const [showNav, setShowNav] = useState(false)
 
   return (
-    <header className='z-20'>
+    <header className='z-30'>
 
-      <div className='flex justify-between items-center h-16 px-11 shadow'>
+      <div className='flex justify-between items-center px-10 h-16 shadow 
+      xl:px-36 2xl:text-[1.1rem]
+      2xl:px-52'>
         <Image
           src={'/logo_header.png'}
           alt='Anna Kampmann'
           width={225}
           height={45}
         />
+
         <Menu
-          className='text-text cursor-pointer'
+          className='text-text cursor-pointer lg:hidden'
           onClick={() => setShowNav(!showNav)}
         />
+
+        <nav className='hidden lg:flex items-center gap-9 text-text '>
+          <Link href={'/'} className=''>Início</Link>
+          <Link href={'/about'} className=''>Sobre</Link>
+          <Link href={'/clinic'} className=''>Clínica</Link>
+          <Link href={'procedures'} className=''>Procedimentos</Link>
+          <button className='bg-text text-white rounded-full px-8 py-2'>Agende Atendimento</button>
+        </nav>
       </div>
 
-      <nav className={`menu z-30 ${showNav ? 'menu-show' : ''}`}>
+
+      <nav className={`menu z-30 ${showNav ? 'menu-show' : ''} `}>
 
         <X className='absolute right-11 top-5 cursor-pointer' onClick={() => setShowNav(!showNav)} />
 
