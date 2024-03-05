@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +30,25 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+} */
+
+.shadow {
+  box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
+
+.menu {
+  position: absolute;
+  /* padding: 2rem 0; */
+  top: 0;
+  right: -100%; /* Esconde o menu inicialmente */
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  transition: right 0.3s ease; 
+}
+
+.menu-show {
+  right: 0;
+}
+
+
