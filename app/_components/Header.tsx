@@ -24,7 +24,7 @@ export default function Header() {
         />
       </div>
 
-      <nav className={`menu ${showNav ? 'menu-show' : ''}`}>
+      <nav className={`menu z-30 ${showNav ? 'menu-show' : ''}`}>
 
         <X className='absolute right-11 top-5 cursor-pointer' onClick={() => setShowNav(!showNav)} />
 
