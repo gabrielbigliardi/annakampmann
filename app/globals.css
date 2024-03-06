@@ -86,6 +86,15 @@ body {
   color: var(--text-color);
 }
 
+.procedures {
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: var(--text-color);
+}
+
 .paragraph {
   font-size: .9rem;
   line-height: 1.6rem;
@@ -202,6 +211,10 @@ body {
   .h1 {
     font-size: 5.38rem;
     line-height: 5rem;
+  }
+
+  .procedures {
+    font-size: 3rem;
   }
 
   .about-1 {

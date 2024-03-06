@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function About() {
     return (
-        <section className='bg-boxes'>
+        <section className='bg-boxes mb-96 lg:mb-10'>
             <div className='about'>
                 <div className='relative w-screen h-[250px] about-1 '>
                     <Image
