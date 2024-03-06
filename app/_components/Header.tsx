@@ -9,7 +9,7 @@ export default function Header() {
   const [showNav, setShowNav] = useState(false)
 
   return (
-    <header className='z-30'>
+    <header className='block z-30'>
 
       <div className='flex justify-between items-center px-10 h-16 shadow 
       xl:px-36 2xl:text-[1.1rem]
