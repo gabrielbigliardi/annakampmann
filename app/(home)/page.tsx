@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Procedures />
-      {/* <Schedule /> */}
+      <Schedule />
     </main>
   );
 }
