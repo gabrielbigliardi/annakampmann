@@ -124,7 +124,7 @@ nav {
   align-items: center;
   width: 100%;
   background-color: white;
-  padding: 0 13.125rem; /* 210px */
+  padding: 0 9.5rem; /* 210px */
 }
 
 .links-container {
@@ -374,6 +374,10 @@ nav svg {
     object-fit: contain;
     transform: translateX(30rem);
   }
+
+  .HERO-text {
+    padding-inline: 9.5rem;
+  }
   .HERO-text h1 {
     font-size: 6rem;
     margin-bottom: 2rem;
@@ -563,10 +567,12 @@ nav svg {
 
 }
 
+
 .HOME-procedures-grid {
   display: grid;
   grid-template-columns: 1fr; 
   gap: 1rem;
+  padding-inline: 2rem;
 }
 
 .HOME-procedures-grid > div:nth-child(n+4):nth-child(-n+7) {
@@ -627,6 +633,7 @@ nav svg {
 @media (min-width: 1024px) {
   .HOME-procedures-grid {
     grid-template-columns: 1fr 1fr 1fr;
+    padding-inline: 6rem;
   }  
 
   .HOME-procedures-description {
@@ -634,9 +641,15 @@ nav svg {
   }
 }
 
+@media (min-width:1280px) {
+  .HOME-procedures-grid {
+    padding-inline: 9rem;
+  }
+}
+
 @media (min-width: 1536px) {
   .HOME-procedures-grid {
-    padding: 0 11vw;
+    padding: 0 9rem;
   }
 }
 

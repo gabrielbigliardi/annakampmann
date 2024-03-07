@@ -18,7 +18,7 @@ export default function Procedures() {
 
 
     return (
-        <section className='p-11'>
+        <section className='HOME-procedures-container'>
             <h2 className='procedures'>Procedimentos</h2>
             <div className='HOME-procedures-grid'>
                 {procedures.map(procedure => (
