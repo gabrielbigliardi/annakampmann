@@ -2,42 +2,38 @@ import Image from 'next/image'
 import React from 'react'
 
 export default function Hero() {
-    return (
-        <section className=''>
-            <div className='h-screen w-screen'>
+  return (
+    <section className='HERO'>
+      <div className='HERO-image-container'>
 
-                <div className='gradient '>
-                </div>
-                <Image
-                    src={'/anna_hero_2.png'}
-                    alt='Anna Kampmann'
-                    fill
-                    // sizes='(min-width: 768px) 100vw, (min-width: 1024px) 50px'
-                    // objectFit='(min-width: 768px) cover, (min-width: 1024px) contain'
-                    objectFit='cover'
-                    className='hero-photo-mobile'
-                />
-                <Image
-                    src={'/anna_hero_2.png'}
-                    alt='Anna Kampmann'
-                    fill
-                    // sizes='(min-width: 768px) 100vw, (min-width: 1024px) 50px'
-                    // objectFit='(min-width: 768px) cover, (min-width: 1024px) contain'
-                    objectFit='contain'
-                    className='hero-photo-desktop'
-                />
-            </div>
+        <Image
+          src={'/anna_hero_2.png'}
+          alt='Anna Kampmann'
+          fill
+          // objectFit='cover'
+          className='HERO-photo-mobile'
+        />
+        <div className='HERO-gradient '></div>
 
-            <div>
-                <div className=" hero-text">
+        {/* <Image
+          src={'/anna_hero_2.png'}
+          alt='Anna Kampmann'
+          width={976}
+          height={976}
+          // fill
+          // objectFit='contain'
+          className='HERO-photo-desktop'
+        /> */}
+      </div>
 
-                    <h1 className="h1">Dra. Anna Kampmann</h1>
-                    <h2 className="description">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos obcaecati laudantium asperiores molestias necessitatibus alias provident.
-                    </h2>
+      <div className=" HERO-text">
 
-                </div>
-            </div>
-        </section>
-    )
+        <h1 className="h1">Dra. Anna Kampmann</h1>
+        <h2 className="description">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos obcaecati laudantium asperiores molestias necessitatibus alias provident.
+        </h2>
+
+      </div>
+    </section>
+  )
 }
