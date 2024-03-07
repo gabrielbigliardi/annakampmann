@@ -6,10 +6,6 @@ import Link from 'next/link';
 
 export default function Header() {
 
-  // const [showNav, setShowNav] = useState(false)
-
-  // console.log(showNav);
-
   return (
     <nav className='shadow'>
       <input type="checkbox" id='sidebar-active' />

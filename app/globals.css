@@ -128,12 +128,14 @@ nav {
 }
 
 .links-container {
+  font-size: 1.275rem;
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
+  gap: 3rem;
 }
 
 .links-container span {
@@ -147,7 +149,7 @@ nav {
 nav a {
   /* height: 100%; */
   /* align-self: ; */
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   color: var(--text-color);
 }
 
@@ -171,9 +173,26 @@ nav svg {
   display: none;
 }
 
+.nav-schedule-button {
+  background-color: #3A2621;
+  color: white;
+  height: 2.875rem;
+  width: 18.125rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 1000px;
+}
+
 @media(max-width: 1536px) {
-  nav {
+  /* nav {
     padding: 0 9rem;
+  } */
+
+  .links-container {
+    gap: 2rem;
   }
   
 }
@@ -181,6 +200,14 @@ nav svg {
 @media(max-width: 1280px) {
   nav {
     padding: 0 6rem;
+  }
+
+  .links-container {
+    font-size: 1.1rem;
+    gap: 1.75rem;
+  }
+  .nav-schedule-button {
+    width: 13.9rem;
   }
 }
 
@@ -215,6 +242,11 @@ nav svg {
     margin: 4rem auto 1rem auto;
     /* align-self: center; */
     opacity: .2;
+  }
+
+  .nav-schedule-button {
+    align-self: center;
+    width: 18rem;
   }
 
   nav a {
