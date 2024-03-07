@@ -9,6 +9,7 @@
   --primary-color: #CE856B;
   --box-bg-color: #FFECE3;
   --text-color: #3A2621;
+  --green-detail: #29817B;
 }
 
 /*
@@ -46,7 +47,12 @@ body {
   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-.menu {
+
+
+
+/* MENU */
+
+.MENU-container {
   position: absolute;
   /* padding: 2rem 0; */
   top: 0;
@@ -57,9 +63,63 @@ body {
   transition: right 0.3s ease; 
 }
 
-.menu-show {
+.MENU-show {
+  /* right: 0; */
+  /* animation: menuShow 1s ease; */ 
   right: 0;
+  transition: fade-in .3s ease 1s;
+  display: block;
+  /* transform: translateX(-100%); */
+  /* transform: translateX(-200px); */
+  /* background-color: bisque; */
+  
 }
+
+@keyframes fade-in {
+  0% {
+    /* display: none; */
+    /* right: -100%; */
+    background-color: white;
+  }
+  100% {
+    /* display: block; */
+    /* right: 0; */
+    background-color: #CE856B;
+  }
+}
+
+.MENU-X {
+  position: absolute;
+  top: 1.25rem;
+  right: 2.75rem/* 44px */;
+  cursor: pointer;
+}
+
+.MENU {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.5rem/* 40px */;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem/* 40px */;
+}
+
+.MENU-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.MENU-button {
+  background-color: var(--text-color);
+  color: white;
+  border-radius: 9999px;
+  padding: 0.75rem 4rem;
+}
+
+
+
+
 
 
 .hero-text {
@@ -291,50 +351,50 @@ body {
 
 
 /* PROCEDURES  */
-.HERO-procedures-boxes {
+.HOME-procedures-boxes {
   background-color: var(--box-bg-color);
   border-radius: 20px;
 
 }
 
-.HERO-procedures-grid {
+.HOME-procedures-grid {
   display: grid;
   grid-template-columns: 1fr; 
   gap: 1rem;
 }
 
-.HERO-procedures-grid > div:nth-child(n+4):nth-child(-n+7) {
+.HOME-procedures-grid > div:nth-child(n+4):nth-child(-n+7) {
   display: none;
 }
 
-.HERO-procedures-grid > * {
+.HOME-procedures-grid > * {
   height: 416px;
 }
 
-.HERO-procedures-box-image {
+.HOME-procedures-box-image {
   position: relative ;
   height: 236px;
 }
 
-.HERO-procedures-image {
+.HOME-procedures-image {
   border-radius: 20px 20px 0 0;
 
 }
 
-.HERO-procedures-info {
+.HOME-procedures-info {
   padding: 1.3rem;
   color: var(--text-color);
 }
 
 
-.HERO-procedures-title {
+.HOME-procedures-title {
   font-size: 1.15rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 8px;
 }
 
-.HERO-procedures-description {
+.HOME-procedures-description {
   font-size: 1rem;
   opacity: .9;
   text-align: justify;
@@ -345,25 +405,37 @@ body {
 }
 
 @media (min-width: 768px) {
-  .HERO-procedures-grid > div:nth-child(n+4):nth-child(-n+6) {
+  .HOME-procedures-grid > div:nth-child(n+4):nth-child(-n+6) {
     display: block;
   }
 
-  .HERO-procedures-grid {
+  .HOME-procedures-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .HERO-procedures-title {
+  .HOME-procedures-title {
     font-size: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
-  .HERO-procedures-grid {
+  .HOME-procedures-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }  
 
-  .HERO-procedures-description {
+  .HOME-procedures-description {
     font-size: 1.1rem;
   }
+}
+
+
+
+
+/* SCHEDULE */
+
+.HOME-schedule {
+  background-color: var(--green-detail);
+  width: 100%;
+  height: 400px;
+  margin: 0 4vw;
 }

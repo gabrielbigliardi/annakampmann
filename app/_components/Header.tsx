@@ -8,6 +8,8 @@ export default function Header() {
 
   const [showNav, setShowNav] = useState(false)
 
+  console.log(showNav);
+
   return (
     <header className='block z-30'>
 
@@ -36,15 +38,15 @@ export default function Header() {
       </div>
 
 
-      <nav className={`menu z-30 ${showNav ? 'menu-show' : ''} `}>
+      <nav className={`MENU-container z-30 ${showNav ? 'MENU-show' : ''} `}>
 
-        <X className='absolute right-11 top-5 cursor-pointer' onClick={() => setShowNav(!showNav)} />
+        <X className='MENU-X' onClick={() => setShowNav(!showNav)} />
 
-        <div className='flex flex-col mt-10 items-center text-center gap-10'>
+        <div className='MENU'>
 
           <span className=''>MENU</span>
 
-          <div className='flex flex-col gap-5'>
+          <div className='MENU-nav'>
             <Link href={'/'} className=''>Início</Link>
             <Link href={'/about'} className=''>Sobre</Link>
             <Link href={'/clinic'} className=''>Clínica</Link>
@@ -62,7 +64,7 @@ export default function Header() {
           ></Image>
 
           <button
-            className='bg-text text-white rounded-full px-16 py-3'
+            className='MENU-button'
           >Agende atendimento</button>
 
         </div>
