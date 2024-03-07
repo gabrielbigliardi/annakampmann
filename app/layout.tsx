@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
-import localfont from '@next/font/local'
+import localfont from 'next/font/local'
 
 const inter = Inter({ subsets: ["latin"] });
 const gotham = localfont({

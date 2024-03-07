@@ -3,6 +3,7 @@ import Hero from "./_components/Hero";
 import About from "./_components/About";
 import Procedures from "./_components/Procedures";
 import Schedule from "./_components/Schedule";
+import Footer from "../_components/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <About />
       <Procedures />
       <Schedule />
+      <Footer />
     </main>
   );
 }
