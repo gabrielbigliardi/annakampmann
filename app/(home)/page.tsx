@@ -2,6 +2,7 @@ import Image from "next/image";
 import Hero from "./_components/Hero";
 import About from "./_components/About";
 import Procedures from "./_components/Procedures";
+import Schedule from "./_components/Schedule";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Hero />
       <About />
       <Procedures />
+      {/* <Schedule /> */}
     </main>
   );
 }
