@@ -19,7 +19,9 @@ export default function Header() {
       <label htmlFor="sidebar-active" className='open-sidebar-button'>
         <Menu />
       </label>
+
       <div className="links-container">
+
         <label htmlFor="sidebar-active" className='close-sidebar-button'>
           <X />
         </label>
