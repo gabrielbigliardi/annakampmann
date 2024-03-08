@@ -166,7 +166,7 @@ nav svg {
 }
 
 #sidebar-active {
-  display: block;
+  display: none;
 }
 
 .open-sidebar-button, .close-sidebar-button {
@@ -223,7 +223,7 @@ nav svg {
     top: 0;
     right: -100%;
     z-index: 10;
-    width: 90%;
+    width: 100%;
 
     background-color: white;
     transition: .75s ease-out;
