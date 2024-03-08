@@ -166,7 +166,7 @@ nav svg {
 }
 
 #sidebar-active {
-  display: none;
+  display: block;
 }
 
 .open-sidebar-button, .close-sidebar-button {
@@ -223,10 +223,11 @@ nav svg {
     top: 0;
     right: -100%;
     z-index: 10;
-    width: 100%;
+    width: 90%;
 
     background-color: white;
     transition: .75s ease-out;
+    
   }
 
   .links-container span {
@@ -914,3 +915,47 @@ nav svg {
 
 
 
+
+
+
+
+/* ABOUT PAGE */
+.ABOUT {
+  padding: 7rem .5rem;
+  color: var(--text-color);
+}
+
+.ABOUT-title {
+  font-size: 1.9rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.ABOUT-container {
+  background-color: var(--box-bg-color);
+  border-radius: 20px;
+  padding: 1rem;
+  /* text-justify: ; */
+}
+
+.ABOUT-container p {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  text-align: justify;
+}
+
+.ABOUT-text-container p {
+  margin-top: 2rem;
+}
+
+.ABOUT-photo-container {
+  position: relative;
+  width: 100%;
+  height: 533px;
+  border-radius: 20px;
+}
+
+.ABOUT-photo {
+  object-fit: cover;
+  border-radius: 20px;
+}
