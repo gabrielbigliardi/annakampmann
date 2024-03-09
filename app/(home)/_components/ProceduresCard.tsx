@@ -22,8 +22,8 @@ export default function ProceduresCard({ data }: { data: { id: number; title: st
                 />
             </div>
             <div className='HOME-procedures-info'>
-                <h3 className='HOME-procedures-title'>{data.title}</h3>
-                <p className='HOME-procedures-description'>{data.description}</p>
+                <h3 className='HOME-procedure-title'>{data.title}</h3>
+                <p className='HOME-procedure-description'>{data.description}</p>
             </div>
         </div>
     )

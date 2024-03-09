@@ -81,14 +81,7 @@ body {
   /* max-width: 160px; */
 }
 
-.procedures {
-  padding-bottom: 1.25rem;
-  text-align: center;
-  font-size: 2.4rem;
-  font-weight: bold;
-  line-height: 3rem;
-  color: var(--text-color);
-}
+
 
 .paragraph {
   font-size: .9rem;
@@ -593,13 +586,13 @@ nav svg {
 
 
 
+
+
 /* PROCEDURES  */
 .HOME-procedures-boxes {
   background-color: var(--box-bg-color);
   border-radius: 20px;
-
 }
-
 
 .HOME-procedures-grid {
   display: grid;
@@ -608,7 +601,8 @@ nav svg {
   padding-inline: 2rem;
 }
 
-.HOME-procedures-grid > div:nth-child(n+4):nth-child(-n+7) {
+
+.HOME-procedures-grid > a:nth-child(n+4):nth-child(-n+7) {
   display: none;
 }
 
@@ -632,14 +626,23 @@ nav svg {
 }
 
 
-.HOME-procedures-title {
+.HOME-procedure-title {
   font-size: 1.15rem;
   font-weight: 800;
   text-align: center;
   margin-bottom: 8px;
 }
 
-.HOME-procedures-description {
+.HOME-procedures-title {
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3rem;
+  color: var(--text-color);
+}
+
+.HOME-procedure-description {
   font-size: 1rem;
   opacity: .9;
   text-align: justify;
@@ -650,15 +653,16 @@ nav svg {
 }
 
 @media (min-width: 768px) {
-  .HOME-procedures-grid > div:nth-child(n+4):nth-child(-n+6) {
-    display: block;
+  .HOME-procedures-grid > a:nth-child(n+7):nth-child(-n+7) {
+    display: none;
   }
+
 
   .HOME-procedures-grid {
     grid-template-columns: 1fr 1fr;
   }
 
-  .HOME-procedures-title {
+  .HOME-procedure-title {
     font-size: 1.5rem;
   }
 }
@@ -669,7 +673,7 @@ nav svg {
     padding-inline: 6rem;
   }  
 
-  .HOME-procedures-description {
+  .HOME-procedure-description {
     font-size: 1.1rem;
   }
 }

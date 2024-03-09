@@ -22,7 +22,7 @@ export default function Procedures() {
 
     return (
         <section className='HOME-procedures-container'>
-            <h2 className='procedures'>Procedimentos</h2>
+            <h2 className='HOME-procedures-title'>Procedimentos</h2>
             <div className='HOME-procedures-grid'>
                 {procedures.map(procedure => (
                     <Link key={procedure.id} href={`/procedimentos/${procedure.title}`} >
