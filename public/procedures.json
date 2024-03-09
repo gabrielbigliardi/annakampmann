@@ -4,43 +4,50 @@
             "id": 1,
             "title": "Preenchimento",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/botox.jpg"
+            "image": "/botox.jpg",
+            "param": "Preenchimento"
         },
         {
             "id": 2,
             "title": "Botox",
             "description": "Botox, ou toxina botulínica, é uma técnica estética minimamente invasiva que envolve a injeção de uma substância para suavizar rugas faciais, relaxando temporariamente os músculos responsáveis pelas linhas de expressão. A recuperação após o procedimento é geralmente rápida e sem complicações significativas. Os pacientes podem retornar às atividades normais imediatamente após a aplicação. É recomendado evitar esforço físico intenso e exposição excessiva ao sol nas primeiras 24 horas.",
-            "image": "/botox.jpg"
+            "image": "/botox.jpg",
+            "param": "Botox"
         },
         {
             "id": 3,
             "title": "Laser",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/botox.jpg"
+            "image": "/botox.jpg",
+            "param": "Laser"
         },
         {
             "id": 4,
             "title": "Estímulo Colágeno",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/cirurgia_dermatologica.jpg"
+            "image": "/cirurgia_dermatologica.jpg",
+            "param": "Est%C3%ADmulo%20Col%C3%A1geno"
         },
         {
             "id": 5,
             "title": "Liftera",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/cirurgia_dermatologica.jpg"
+            "image": "/cirurgia_dermatologica.jpg",
+            "param": "Liftera"
         },
         {
             "id": 6,
             "title": "Crioterapia",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/cirurgia_dermatologica.jpg"
+            "image": "/cirurgia_dermatologica.jpg",
+            "param": "Crioterapia"
         },
         {
             "id": 7,
             "title": "Biópsia e cirurgia dermatológica",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.",
-            "image": "/cirurgia_dermatologica.jpg"
+            "image": "/cirurgia_dermatologica.jpg",
+            "param": "Bi%C3%B3psia%20e%20cirurgia%20dermatol%C3%B3gica"
         }
     ]
 }

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 
-export default function ProceduresCard({ data }: { data: { id: number; title: string; description: string; image: string }; }) {
+export default function ProceduresCard({ data }: { data: { id: number; title: string; description: string; image: string; param: string }; }) {
 
     // console.log(data.image);
 

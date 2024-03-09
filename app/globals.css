@@ -974,10 +974,26 @@ nav svg {
 }
 
 .PROCEDURE-title {
-  font-size: 1.9rem;
+  font-size: 3rem;
   font-weight: 800;
   text-align: center;
+  margin-bottom: 2rem;
 }
+
+.PROCEDURE-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.PROCEDURE-buttons-container a {
+  padding: .8rem 2rem;
+  margin: .25rem ;
+  border: var(--text-color) 1px solid;
+  border-radius: 1000px;
+}
+
 
 .PROCEDURE-container {
   background-color: var(--box-bg-color);

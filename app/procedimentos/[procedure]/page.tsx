@@ -3,18 +3,22 @@ import { useEffect, useState } from 'react'
 import data from '@/public/procedures.json'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 type Procedure = {
   id: number;
   title: string;
   description: string;
-  image: string
+  image: string;
+  param: string;
 }
 
 
 export default function ProcedurePage(props: { params: { procedure: string }, searchParams: {} }) {
 
-  // console.log(props);
+
+  const params = useParams()
+
 
   const [procedure, setProcedure] = useState<Procedure | undefined>()
 
@@ -26,18 +30,25 @@ export default function ProcedurePage(props: { params: { procedure: string }, se
 
   useEffect(() => {
     setProcedure(() => {
-      return procedures.find(procedure => procedure.title === props.params.procedure)
+      return procedures.find(procedure => procedure.param === props.params.procedure)
     })
   }, [])
+
+  console.log(`procedure: ${procedure}`);
 
 
   return (
     <section className='PROCEDURE'>
-      <h1 className='PROCEDURE-title'>Sobre</h1>
+      <h1 className='PROCEDURE-title'>Procedimentos</h1>
 
       <div className='PROCEDURE-buttons-container'>
         {procedures.map(procedure => (
-          <Link key={procedure.id} href={`/procedimentos/${procedure.title}`} className='p-4'>
+          <Link
+            key={procedure.id}
+            href={`/procedimentos/${procedure.title}`}
+            className='PROCEDURE-button'
+            style={procedure.param === params.procedure ? { backgroundColor: "#3A2621", color: "white" } : { backgroundColor: "white", color: '#3A2621' }}
+          >
             {procedure.title}
           </Link>
         ))}
