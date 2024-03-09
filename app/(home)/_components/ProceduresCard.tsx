@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react'
 
-export default function ProceduresCard({ data }: { key: number; data: { id: number; title: string; description: string; image: string }; }) {
+export default function ProceduresCard({ data }: { data: { id: number; title: string; description: string; image: string }; }) {
 
     // console.log(data.image);
 
@@ -10,7 +10,7 @@ export default function ProceduresCard({ data }: { key: number; data: { id: numb
         <div className='HOME-procedures-boxes shadow'>
             <div className='HOME-procedures-box-image'>
                 <Image
-                    src={`/${data.image}`}
+                    src={data.image}
                     alt={data.title}
                     // width={321}
                     // height={321}

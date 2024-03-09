@@ -7,18 +7,12 @@ import Link from 'next/link';
 export default function Header() {
 
   const [isChecked, setIsChecked] = useState(false)
+  console.log(isChecked);
 
-  function closeMenu() {
-    //TODO: USAR STATE
-
-    // document.getElementById('sidebar-active')?.checked = false
-
-
-  }
 
   return (
     <nav className='shadow'>
-      <input type="checkbox" id='sidebar-active' checked={isChecked} />
+      <input type="checkbox" id='sidebar-active' checked={isChecked} onChange={() => console.log(isChecked)} />
 
       <Image
         src={'/logo_header.png'}
@@ -29,7 +23,7 @@ export default function Header() {
       <label
         htmlFor="sidebar-active"
         className='open-sidebar-button'
-        onClick={() => setIsChecked(true)}
+        onClick={() => setIsChecked(!isChecked)}
       >
         <Menu />
       </label>
@@ -39,13 +33,13 @@ export default function Header() {
         <label
           htmlFor="sidebar-active"
           className='close-sidebar-button'
-          onClick={() => setIsChecked(false)}
+          onClick={() => setIsChecked(!isChecked)}
         >
           <X />
         </label>
 
         <span>MENU</span>
-        <Link href={'/'} onClick={() => setIsChecked(false)}>Início</Link>
+        <Link href={'/'} onClick={() => setIsChecked(!isChecked)}>Início</Link>
         <Link href={'/sobre'} onClick={() => setIsChecked(false)}>Sobre</Link>
         <Link href={'/clinica'} onClick={() => setIsChecked(false)}>Clínica</Link>
         <Link href={'/procedimentos'} onClick={() => setIsChecked(false)}>Procedimentos</Link>

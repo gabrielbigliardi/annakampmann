@@ -1,6 +1,6 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import data from './procedures.json'
+import data from '@/public/procedures.json'
 import ProceduresCard from './ProceduresCard'
 import Link from 'next/link'
 
@@ -13,7 +13,9 @@ type Procedure = {
 
 
 export default function Procedures() {
+
     const procedures = data.procedures
+
 
 
 
@@ -22,7 +24,9 @@ export default function Procedures() {
             <h2 className='procedures'>Procedimentos</h2>
             <div className='HOME-procedures-grid'>
                 {procedures.map(procedure => (
-                    <ProceduresCard key={procedure.id} data={procedure} />
+                    <Link key={procedure.id} href={`/procedimentos/${procedure.title}`} >
+                        <ProceduresCard data={procedure} />
+                    </Link>
                 ))}
             </div>
             <div className='button'>
