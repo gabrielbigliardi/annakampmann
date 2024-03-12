@@ -1050,13 +1050,19 @@ nav svg {
   padding: 1rem;
   /* text-justify: ; */
   display: flex;
+  flex-direction: column;
   flex: 1;
 }
 
 .CLINIC-text {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  /* max-width: 300px; */
+  text-align: justify;
+}
+
+.CLINIC-text * {
+  padding-top: 2rem;
 }
 
 .CLINIC-swiper {
@@ -1078,4 +1084,16 @@ nav svg {
   /* width: 100%; */
   /* object-fit: cover; */
   border-radius: 20px;
+}
+
+@media (min-width: 1280px) {
+  .CLINIC-container {
+    flex-direction: row;
+    flex: 1;
+  }
+
+  .CLINIC-text {
+    max-width: 50%;
+    padding-inline: 3rem 1rem;
+  }
 }

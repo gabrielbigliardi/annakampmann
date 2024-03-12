@@ -41,7 +41,7 @@ export default function Header() {
         <Link href={'/'} onClick={() => setIsChecked(!isChecked)}>Início</Link>
         <Link href={'/sobre'} onClick={() => setIsChecked(false)}>Sobre</Link>
         <Link href={'/clinica'} onClick={() => setIsChecked(false)}>Clínica</Link>
-        <Link href={'/procedimentos'} onClick={() => setIsChecked(false)}>Procedimentos</Link>
+        <Link href={'/procedimentos/Preenchimento'} onClick={() => setIsChecked(false)}>Procedimentos</Link>
         <Link href={'/'} className='nav-schedule-button'>Marque atendimento</Link>
 
         <Image
