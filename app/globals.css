@@ -1027,3 +1027,55 @@ nav svg {
   object-fit: cover;
   border-radius: 20px;
 }
+
+
+
+
+
+
+
+
+
+/* CLINIC */
+.CLINIC {
+  padding: 7rem .5rem;
+  color: var(--text-color);
+  /* display: flex; */
+}
+
+
+.CLINIC-container {
+  background-color: var(--box-bg-color);
+  border-radius: 20px;
+  padding: 1rem;
+  /* text-justify: ; */
+  display: flex;
+  flex: 1;
+}
+
+.CLINIC-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+.CLINIC-swiper {
+  height: 75%;
+  width: 50%;
+}
+/* 
+.CLINIC-image-container {
+  display: flexbox;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+} */
+
+.CLINIC-image {
+  /* display: block; */
+  /* height: 100%; */
+  /* width: 100%; */
+  /* object-fit: cover; */
+  border-radius: 20px;
+}
