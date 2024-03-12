@@ -12,13 +12,14 @@ export default function Header() {
   return (
     <nav className='shadow'>
       <input type="checkbox" id='sidebar-active' checked={isChecked} onChange={() => console.log(isChecked)} />
-
-      <Image
-        src={'/logo_header.png'}
-        alt='Anna Kampmann Logo'
-        width={225}
-        height={45}
-      />
+      <Link href={'/'}>
+        <Image
+          src={'/logo_header.png'}
+          alt='Anna Kampmann Logo'
+          width={225}
+          height={45}
+        />
+      </Link>
       <label
         htmlFor="sidebar-active"
         className='open-sidebar-button'

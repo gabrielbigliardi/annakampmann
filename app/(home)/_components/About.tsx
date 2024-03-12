@@ -39,7 +39,7 @@ export default function About() {
                     <h2 className='h2'>Sobre</h2>
                     <p className='paragraph'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fermentum id tortor sit amet euismod. Etiam ultricies, nibh nec tempor fermentum, massa ligula fringilla eros, nec porta justo eros et elit. Nullam malesuada accumsan maximus. Nunc et libero quis justo vehicula porttitor vel nec urna. Suspendisse pulvinar, magna sed consectetur convallis, turpis lectus aliquet nisl, ut efficitur dui turpis at nibh. Donec scelerisque vel massa non maximus. In ut elementum diam. In nec posuere mi. Nullam posuere, mi vitae sollicitudin convallis, sapien nibh mattis elit, ac ultrices dolor orci et orci. Fusce quis malesuada turpis.</p>
                     <div className='button-about'>
-                        <Link href={'/about'} >Ver mais</Link>
+                        <Link href={'/sobre'} >Ver mais</Link>
                     </div>
                 </div>
 

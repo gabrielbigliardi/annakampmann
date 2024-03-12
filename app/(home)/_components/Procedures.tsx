@@ -31,7 +31,7 @@ export default function Procedures() {
                 ))}
             </div>
             <div className='button'>
-                <Link href={'/about'} >Ver mais</Link>
+                <Link href={'/procedimentos/Preenchimento'} >Ver mais</Link>
             </div>
         </section>
     )
